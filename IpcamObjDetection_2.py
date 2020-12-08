@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
+
 
 
 import cv2 
@@ -12,7 +12,7 @@ import math
 import time
 
 
-# In[14]:
+
 
 
 #load yolo
@@ -31,14 +31,13 @@ end= time.time()
 print("To load yolo3 time :",end-start)
 
 
-# In[15]:
 
 
 #vediocapture
-vediocap = cv2.VideoCapture('chair2.mp4')
-vediocap.set(cv2.CAP_PROP_FRAME_WIDTH,640)
-vediocap.set(cv2.CAP_PROP_FRAME_HEIGHT,480)
-vediocap.set(cv2.CAP_PROP_FPS, 30) 
+# vediocap = cv2.VideoCapture('chair2.mp4')
+# vediocap.set(cv2.CAP_PROP_FRAME_WIDTH,640)
+# vediocap.set(cv2.CAP_PROP_FRAME_HEIGHT,480)
+# vediocap.set(cv2.CAP_PROP_FPS, 30) 
 
 # writer = None
 (height,width) = (None, None)
@@ -53,7 +52,6 @@ alert=0
 miss =0
 
 
-# In[16]:
 
 
 start =time.time()
@@ -179,7 +177,7 @@ end =time.time()
 print("time taken : ",end -start)
 
 
-# In[ ]:
+
 
 
 
