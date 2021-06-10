@@ -32,7 +32,7 @@ def process():
 
 	end= time.time()
 	print("To load model time_taken :",end-start)
-
+	writer =None
 	(height,width) = (None, None)
 	while True:
 
@@ -101,12 +101,12 @@ def process():
 	    
 	    
 	    
-	    # check if the video writer is None
-	    # if writer is None:
-	    #     # initialize our video writer
-	    #     fourcc = cv2.VideoWriter_fourcc(*"MJPG")
-	    #     writer = cv2.VideoWriter("output_1.avi", fourcc, 30,(frame.shape[1], frame.shape[0]), True)   
-	    # writer.write(frame)
+ 	    #check if the video writer is None
+	    if writer is None:
+	        # initialize our video writer
+	        fourcc = cv2.VideoWriter_fourcc(*"MJPG")
+	        writer = cv2.VideoWriter("output_1.avi", fourcc, 30,(frame.shape[1], frame.shape[0]), True)   
+	    writer.write(frame)
 	    cv2.imshow('frame',frame)
 	    if cv2.waitKey(1) & 0xFF == ord('q'):
 	        break
