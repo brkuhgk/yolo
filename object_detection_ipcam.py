@@ -2,6 +2,8 @@
 # 2.For Ip-cam download the IP-camera App from playstore 
 # https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_US&gl=US
 # 3.update the varaible IPADDRESS_OF_IPCAM from the Ip you get from your app.
+#4.make sure you have files yolov3.weights,yolov3.cfg,coco.names in same directory.
+
 
 
 
